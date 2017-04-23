@@ -16,27 +16,27 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Source Name</label>  
+  <label class="col-md-4 control-label" for="id">Source Name</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+  <input id="name" name="name" placeholder="name of source" class="form-control input-md" type="text">
    
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">URL</label>  
+  <label class="col-md-4 control-label" for="url">URL</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+  <input id="url" name="url" placeholder="paste url here" class="form-control input-md" type="text">
    
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Source Description</label>  
+  <label class="col-md-4 control-label" for="description">Source Description</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+  <input id="description" name="description" placeholder="placeholder" class="form-control input-md" type="text">
     
   </div>
 </div>
@@ -45,12 +45,40 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton">Submit to Database</label>
   <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+    <button id="btn" name="singlebutton" class="btn btn-primary">Submit</button>
   </div>
 </div>
 
 </fieldset>
 </form>
+</br></br>
+
+<p>
+<form>
+<fieldset>
+	<label for="idButton">Search Database by ID</label>
+	<div>
+	    <input id="searchid" name="searchid" placeholder="Enter ID here" class="form-control input-md" type="text">
+	    <button id ="idbtn" name="idButton">Search by ID</button>
+	</div>
+</fieldset>
+</form>
+</p>
+</br></br>
+
+<p>
+<form>
+<fieldset>
+	<label for="nameButton">Search Database by Source Name</label>
+	<div>
+	    <input id="searchname" name="searchname" placeholder="Enter Source Name here" class="form-control input-md" type="text">
+	    <button id ="namebtn" name="nameButton">Search by Source Name</button>
+	</div>
+</fieldset>
+</form>
+</p>
+
+
 
 
 
@@ -62,6 +90,7 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+  <script src="scripts.js" type="text/javascript"></script>
   <script type="text/javascript">
    function autorun()
    {
