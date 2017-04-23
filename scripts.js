@@ -28,8 +28,8 @@ $(document).ready(function() {
         }
     });
 
-    $("#sid").click(function() {
-        var selectID = document.getElementById("selectedID").value;//selects the ID it wants to
+    $("#idbtn").click(function() {
+        var selectID = document.getElementById("searchid").value;
         var jsonSID = {"ID":selectID};
         var jsonSelectID = JSON.stringify(jsonSID);
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
         else{
             //AJAX goes here
             $.ajax ({
-               type:"POST",
+               type:"GET",
                 url:"viewData.php",
                 data: {selectData: jsonSelectID},
                 success: function(selectData){
@@ -52,7 +52,7 @@ $(document).ready(function() {
                     $("#viewID").innerText(sID);
                 },
                 error: function(e){
-                    alert("Didn't work, refresh and it should work");
+                    alert("Error!!! Try that again");
                 }
 
             });
